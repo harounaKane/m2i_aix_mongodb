@@ -1,3 +1,4 @@
+// Top 5 produit 
 db.commandes.aggregate([
   {$match: {statut: {$ne: "annulée"}}},
   {$unwind: "$items"},
@@ -23,4 +24,21 @@ db.commandes.aggregate([
     totalQte: 1,
     idProd: "$prod._id"
   }}
-])
+]);
+
+// CA mensuel
+db.commandes.aggregate([
+  {$match: {statut: {$ne: "annulée"}}},
+  {
+    $group: {
+      _id: {
+        $dateToString: {format: "%Y-%m", date: "$createdAt"}
+      },
+      CA: {$sum: "$totalTTC"}
+    }
+  },
+  {
+    $project: {_id: 0, periode: "$_id", CA: 1}
+  },
+  {$sort: {periode: -1}}
+]);
