@@ -42,3 +42,29 @@ db.commandes.aggregate([
   },
   {$sort: {periode: -1}}
 ]);
+
+
+// Top 5 clients par CA total
+db.commandes.aggregate([
+  {$match: {statut: {$ne: "annulée"}}},
+  {$group: {_id: "$clientId", CA: {$sum: "$totalTTC"}}},
+  {$sort: {CA: -1}},
+  {$limit: 5},
+  {
+    $lookup: {
+      from: "clients",
+      localField: "_id",
+      foreignField: "_id",
+      as: "client"
+    }
+  },
+  {$unwind: "$client"},
+  {$project: {
+    _id: 0,
+    prenom: "$client.prenom",
+    nom: "$client.nom",
+    email: "$client.email",
+    ville: "$client.adresse.ville",
+    CA: 1
+  }}
+])
