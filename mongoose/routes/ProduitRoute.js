@@ -21,6 +21,16 @@ router.get("/", async (req, res) => {
 });
 
 
+
+router.get("/etudiant", async(req, res) => {
+    try{
+        const prod = await Produit.find().populate("etudiantId", "prenom nom");
+        res.status(201).json(prod);
+    }catch(err){
+        res.status(404).json({erreur: err.message});
+    }
+});
+
 router.get("/:id", async (req, res) => {
     try{
         const prod = await Produit.findById(req.params.id);

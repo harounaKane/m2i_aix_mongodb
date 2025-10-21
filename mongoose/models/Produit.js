@@ -1,6 +1,11 @@
-import { Schema, Types, model } from "mongoose";
+import { Schema, model } from "mongoose";
 
 const prod = new Schema({
+    etudiantId: {
+        type: Schema.Types.ObjectId,
+        ref: "Etudiant",
+        require: true
+    },
     libelle: {type: String, require: true},
     prix: {type: Number, require: true},
     provenance: {type: String, enum: ["France", "Canada"], default: "France"}
@@ -8,12 +13,3 @@ const prod = new Schema({
 
 export default model("Produit", prod);
 
-
-/**
- * Créer un etudiant : 
- *      prenom: string
- *      nom: string
- *      mail: string - unique
- *      note: []
- *      matieres: []
- */
