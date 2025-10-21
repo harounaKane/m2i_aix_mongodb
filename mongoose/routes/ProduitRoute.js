@@ -21,7 +21,6 @@ router.get("/", async (req, res) => {
 });
 
 
-
 router.get("/etudiant", async(req, res) => {
     try{
         const prod = await Produit.find().populate("etudiantId", "prenom nom");
