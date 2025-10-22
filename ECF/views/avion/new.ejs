@@ -1,0 +1,23 @@
+    <%- include("../header") %>
+
+    <main class="container">
+        <h2 class="text-center">New avion</h2>
+    <form method="POST" action="/api/avion/?_method=PUT">
+        <div class="mb-3">
+            <label for="" class="form-label">Modèle</label>
+            <input type="text" name="model" class="form-control" id="" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Compagnie</label>
+            <input type="text" name="compagnie" class="form-control" id="">
+        </div>
+        
+        <div class="mb-3">
+            <label for="cpt" class="form-label">Capacité</label>
+            <input type="text" name="capacite" class="form-control" id="cpt">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </main>
+</body>
+</html>

@@ -21,8 +21,9 @@ console.log(1);
             throw new Error ("Ce TGV n'a pas de place dispo !");
         
         tgv.placesRestantes -= 1;
-        
-        const billet = await Billet.create(req.body, {session});
+         
+        const billet = new Billet(req.body);
+        await Billet.save({session});
         
 console.log(2);
         await tgv.save({session});

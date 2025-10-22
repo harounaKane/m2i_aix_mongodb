@@ -12,7 +12,7 @@ app.use("/api/billet", billetRoute);
 
 connect("mongodb://127.0.0.1:27017/TP_3")
     .then( () => console.log("connecté à mpongo"))
-    .catch( () => console.log("connecté à mpongo failled"));
+    .catch( (e) => console.log("connecté à mpongo failled",e));
 
 
 app.listen(3000, () => console.log("port 3000"));
