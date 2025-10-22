@@ -5,54 +5,61 @@ import mongoose from "mongoose";
 
 const router = Router();
 
+router.post("/", async (req, res) => {
+console.log(1);
+
+    const session = await Tgv.startSession();
+    session.startTransaction();
+
+    try{
+        const { tgvId } = req.body;
+        const tgv = await Tgv.findById(tgvId).session(session);
+
+        if( !tgv ) throw new Error ("Ce TGV n'existe pas !");
+
+        if(tgv.placesRestantes <= 0) 
+            throw new Error ("Ce TGV n'a pas de place dispo !");
+        
+        tgv.placesRestantes -= 1;
+        
+        const billet = await Billet.create(req.body, {session});
+        
+console.log(2);
+        await tgv.save({session});
+
+        await session.commitTransaction();
+        session.endSession();
+        
+        return res.status(201).json(billet);
+
+    }catch (err){
+        await session.abortTransaction();
+        session.endSession();
+        return res.status(404).json({"erreur": err.message});
+    }
+});
+
 // router.post("/", async (req, res) => {
-
-//     const session = await mongoose.startSession();
-//     session.startTransaction();
-
 //     try{
 //         const { tgvId } = req.body;
-//         const tgv = await Tgv.findById(tgvId).session(session);
+//         const tgv = await Tgv.findById(tgvId);
 
 //         if( !tgv ) return res.status(404).json({"msg": "Ce TGV n'existe pas !"});
 
-//         if(tgv.placesRestantes <= 0) 
-//             return res.status(404).json({"msg": "Ce TGV n'a plus de place!"});
+//         if(tgv.placesRestantes <= 0) return res.status(404).json({"msg": "Ce TGV n'a plus de place!"});
         
 //         tgv.placesRestantes -= 1;
         
-//         const billet = await Billet.create(req.body, {session});
+//         const billet = await Billet.create(req.body);
         
 //         await tgv.save();
-        
+
 //         return res.status(201).json(billet);
 
 //     }catch (err){
 //         return res.status(404).json({"erreur": err.message});
 //     }
 // });
-
-router.post("/", async (req, res) => {
-    try{
-        const { tgvId } = req.body;
-        const tgv = await Tgv.findById(tgvId);
-
-        if( !tgv ) return res.status(404).json({"msg": "Ce TGV n'existe pas !"});
-
-        if(tgv.placesRestantes <= 0) return res.status(404).json({"msg": "Ce TGV n'a plus de place!"});
-        
-        tgv.placesRestantes -= 1;
-        
-        const billet = await Billet.create(req.body);
-        
-        await tgv.save();
-
-        return res.status(201).json(billet);
-
-    }catch (err){
-        return res.status(404).json({"erreur": err.message});
-    }
-});
 
 
 router.get("/:origin/:dest", async (req, res) => {
