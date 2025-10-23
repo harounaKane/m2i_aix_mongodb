@@ -1,6 +1,7 @@
     <%- include("../header") %>
 
     <main class="container">
+        <a href="/api/vol/new" class="btn btn-outline-success">New Vol</a>
         <h2 class="text-center">Vols</h2>
 
         <table class="table table striped">
@@ -19,9 +20,9 @@
                     <td> <%= v.numeroVol %> </td>
                     <td> <%= v.origine %> </td>
                     <td> <%= v.destination %> </td>
-                    <td> <%= v.dateDepart.toLocaleString() %> </td>
-                    <td> <%= v.dateArrivee.toLocaleString() %> </td>
-                    <td> <%= v.avion.compagnie %> - <%= v.avion.model %> </td>
+                    <td> <%= new Date(v.dateDepart).toLocaleString() %> </td>
+                    <td> <%= new Date(v.dateArrivee).toLocaleString() %> </td>
+                    <td> <%= v.avion.compagnie %> - <%= v.avion.modele %> </td>
                     <td> <%= v.placesRestantes %> </td>
                     <td>
                         x - u

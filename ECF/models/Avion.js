@@ -1,11 +1,19 @@
-import { model, Schema } from "mongoose";
 
-const AvionSchema = new Schema({
-    model: {type: String, required: true},
-    compagnie: {type: String, required: true},
-    capacite: {type: Number, required: true, max: 10},
-    enService: {type: Boolean, default: true}
-});
+import mongoose from "mongoose";
 
+const avionSchema = new mongoose.Schema(
+  {
+    modele: { type: String, required: true, trim: true },
+    compagnie: { type: String, required: true, trim: true },
+    capacite: {
+      type: Number,
+      required: true,
+      min: [1, "La capacité doit être ≥ 1"],
+      max: [10, "La capacité ne doit pas dépasser 10"],
+    },
+    enService: { type: Boolean, default: true },
+  },
+  { timestamps: true }
+);
 
-export default model("Avion", AvionSchema);
+export default mongoose.model("Avion", avionSchema);

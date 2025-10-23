@@ -5,6 +5,8 @@ import methodeoverride from "method-override";
 
 import avionRouter from "./routes/avionRoute.js";
 import volRoute from "./routes/volRoute.js";
+import passagerRoute from "./routes/passagerRoute.js";
+import billetRoute from "./routes/billetRoute.js";
 
 const app = express();
 
@@ -22,7 +24,7 @@ app.set("views", "./views");
 
 app.use("/api/avion", avionRouter);
 app.use("/api/vol", volRoute);
+app.use("/api/pssager", passagerRoute);
+app.use("/api/billet", billetRoute);
 
 app.listen(3000, () => console.log("serveur sur le prot 3000"));
-
-//  https://prod.liveshare.vsengsaas.visualstudio.com/join?DD596BC52F725054E57554A306FCA0BF3347

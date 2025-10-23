@@ -18,19 +18,19 @@
         </div>
         <div class="mb-3">
             <label for="cpt" class="form-label">Date départ</label>
-            <input type="date" name="dateDepart" class="form-control" id="">
+            <input type="datetime-local" name="dateDepart" class="form-control" id="">
         </div>
         
         <div class="mb-3">
             <label for="cpt" class="form-label">Date d'arrivée</label>
-            <input type="date" name="dateArrivee" class="form-control" id="">
+            <input type="datetime-local" name="dateArrivee" class="form-control" id="">
         </div>
 
         <div class="mb-3">
             <label for="">Avion</label>
             <select name="avion"  class="form-select">
                 <% avions.forEach( a => { %>
-                    <option value="<%= a._id %>"> <%= a.compagnie %> - <%= a.model %> </option>
+                    <option value="<%= a._id %>"> <%= a.compagnie %> - <%= a.modele %> </option>
                 <% }) %>
             </select>
         </div>
