@@ -4,6 +4,7 @@ import cors from "cors";
 import methodeoverride from "method-override";
 
 import avionRouter from "./routes/avionRoute.js";
+import volRoute from "./routes/volRoute.js";
 
 const app = express();
 
@@ -20,5 +21,8 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.use("/api/avion", avionRouter);
+app.use("/api/vol", volRoute);
 
 app.listen(3000, () => console.log("serveur sur le prot 3000"));
+
+//  https://prod.liveshare.vsengsaas.visualstudio.com/join?DD596BC52F725054E57554A306FCA0BF3347

@@ -13,11 +13,9 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.put("/", async (req, res) => {
+router.put("/:id", async (req, res) => {
     try{
-        console.log("put");
-        
-        const avion = await Avion.create(req.body);
+        const avion = await Avion.findByIdAndUpdate(req.params.id, req.body);
         res.redirect("/api/avion");
     }catch(err){
 
@@ -27,16 +25,25 @@ router.put("/", async (req, res) => {
 router.get("/", async (req, res) => {
     try{
         const avions = await Avion.find();
-        // console.log(avions);
         res.render("avion/index", {avions});
     }catch(err){
 
     }
 });
 
+
 router.get("/new", async (req, res) => {
     try{
         res.render("avion/new");
+    }catch(err){
+
+    }
+});
+
+router.get("/:id/update", async (req, res) => {
+    try{
+        const avion = await Avion.findById(req.params.id);        
+        res.render("avion/edit", {avion});
     }catch(err){
 
     }
