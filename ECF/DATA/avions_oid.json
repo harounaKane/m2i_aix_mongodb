@@ -1,0 +1,452 @@
+[
+  {
+    "_id": {
+      "$oid": "687e071a4e3341f8bae5397b"
+    },
+    "modele": "Airbus A320",
+    "compagnie": "Air Sénégal",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "0c3a8a9b256546fc8c17fa8e"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Lufthansa",
+    "capacite": 6,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "a14a65c3dc97473b9f2b8c1d"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Transavia",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "f282e2a8de854853be5ad063"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "Air Sénégal",
+    "capacite": 8,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "7a070dd5c679465cba48555d"
+    },
+    "modele": "Airbus A320",
+    "compagnie": "Air France",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "42a477bf4bae4a4bbfc36e0a"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Corsair",
+    "capacite": 9,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "d273f28a0ba144ba97d17cf8"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "Air France",
+    "capacite": 6,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "da7c06546d5943f9af1188ea"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "TAP Air Portugal",
+    "capacite": 8,
+    "enService": false
+  },
+  {
+    "_id": {
+      "$oid": "a5c671a6a66148d5ae9329b7"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Lufthansa",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "456c55c95bb14bc49fed4126"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Transavia",
+    "capacite": 8,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "b77bd7de89574392b27e6d6e"
+    },
+    "modele": "Airbus A319",
+    "compagnie": "Royal Air Maroc",
+    "capacite": 6,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "e0efb3acd4ed4e2fb2e50151"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Corsair",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "11df96523a5b46ce910ae123"
+    },
+    "modele": "Airbus A320",
+    "compagnie": "Air Sénégal",
+    "capacite": 8,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "ab9c631a504c4504abddf46f"
+    },
+    "modele": "Airbus A319",
+    "compagnie": "Air Sénégal",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "8c34c7f66ccf4205880eb7a6"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Lufthansa",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "78655b35bcac401fbb1f78f1"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "Iberia",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "11623603ba9c46ebb478fed5"
+    },
+    "modele": "Airbus A320",
+    "compagnie": "TAP Air Portugal",
+    "capacite": 9,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "c1c7d6ff672b4eb2b614afa6"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Lufthansa",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "79bae9abf3f2496f9c5e9653"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "Royal Air Maroc",
+    "capacite": 6,
+    "enService": false
+  },
+  {
+    "_id": {
+      "$oid": "aef38e6026984737ae876f22"
+    },
+    "modele": "Airbus A320",
+    "compagnie": "Air Sénégal",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "168ceebb08354cc5acc4ae52"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Corsair",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "9c6cfb28c1ce4cd583c806bd"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Air Sénégal",
+    "capacite": 6,
+    "enService": false
+  },
+  {
+    "_id": {
+      "$oid": "dc1d7b35d8034c109fe09db4"
+    },
+    "modele": "Boeing 737-800",
+    "compagnie": "Air Sénégal",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "49b9f0afec1d4ca587e17d67"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Iberia",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "bf925d401fcd441b92caf6e3"
+    },
+    "modele": "Airbus A319",
+    "compagnie": "Transavia",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "07f3a590f266403284d96df4"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Corsair",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "b167c8cd60974687b3ceba53"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "Air Sénégal",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "df59c663fb684663b158c4ad"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "Transavia",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "2e1ae16d8abc4d6587a61fba"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Corsair",
+    "capacite": 8,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "dcc9c222aa72439e87d09a16"
+    },
+    "modele": "Airbus A319",
+    "compagnie": "TAP Air Portugal",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "f7dad32557764fe295dbe025"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Corsair",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "046933f1368b4f0e8baf073f"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Air France",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "d3b3933e9bfa486eb22761ee"
+    },
+    "modele": "Boeing 737-800",
+    "compagnie": "Royal Air Maroc",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "2602eed2234c49e2822566c6"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Air Sénégal",
+    "capacite": 9,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "1ace3c1c3cad43069d084fef"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Royal Air Maroc",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "62e731e83e2049deadd554b2"
+    },
+    "modele": "Boeing 737-800",
+    "compagnie": "Iberia",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "ea5099d5f18f4ff295982ec9"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Iberia",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "378bf44bac4a4a23ae1c53e6"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Transavia",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "f0e4205d8a7442399b470c4a"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Lufthansa",
+    "capacite": 9,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "e3bd8ffbefb94518a55bfba4"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "TAP Air Portugal",
+    "capacite": 8,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "339feec5a70244308db815b5"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Royal Air Maroc",
+    "capacite": 6,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "1116dca25f38476f827d0e09"
+    },
+    "modele": "Airbus A320",
+    "compagnie": "Iberia",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "75c62b5d41d0401fac999740"
+    },
+    "modele": "Airbus A321",
+    "compagnie": "Air Sénégal",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "2f8c27f63d9641f890b6c73e"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Transavia",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "51a172b0766d49d092ce0a2b"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "TAP Air Portugal",
+    "capacite": 5,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "0e479d3668424cf28dc4f6f7"
+    },
+    "modele": "Boeing 737-800",
+    "compagnie": "TAP Air Portugal",
+    "capacite": 9,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "f54f106f976f4a49b6d6ff28"
+    },
+    "modele": "Boeing 737-700",
+    "compagnie": "Iberia",
+    "capacite": 7,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "762923347f0e4fc78a6d04d4"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Air France",
+    "capacite": 10,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "ad36efeea43a44ae873e52ea"
+    },
+    "modele": "Embraer E190",
+    "compagnie": "Air Sénégal",
+    "capacite": 9,
+    "enService": true
+  },
+  {
+    "_id": {
+      "$oid": "09b083277d4344b3a2718bf0"
+    },
+    "modele": "Embraer E195",
+    "compagnie": "Lufthansa",
+    "capacite": 10,
+    "enService": true
+  }
+]
